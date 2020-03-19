@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon"
+    "watch": "nodemon",
+    "hot": "webpack-dev-server --watch --port 8081 --hot"
   },
   "keywords": [],
   "author": "",
