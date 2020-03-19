@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Vue app with webpack 4</title>
+    <style type="text/css">
+        [v-cloak] { display: none; }
+    </style>
+  </head>
+  <body>
+    index.ejs
+    <div id="app" v-cloak>
+        App content
+        <hello-world>Bob</hello-world>
+    </div>
+    <!-- <script type="text/javascript" src="dist/main.js"></script></body> -->
+    <script type="text/javascript" src="<%= mix('dist/bundle.js') %>"></script></body>
+  </body>
+</html>
